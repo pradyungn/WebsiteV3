@@ -1,65 +1,39 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import dark from '../styles/Dark.module.css'
+import light from '../styles/Light.module.css'
+
+let styles = {"dark":dark, "light":light};
+let mode = "dark"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles[mode].container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>pradyungn</title>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className={styles[mode].landing}>
+        <div className={styles[mode].name}>
+            Pradyun Narkadamilli
+        </div>
+        <div className={styles[mode].tagline}>
+            Maker of things, engineering afficionado.
+        </div>
+        <div className={styles[mode].socials}>
+            <div className={(styles[mode].social) + " green"}>
+                <span>a</span> 
+            </div>
+            <div className={styles[mode].social + " blue"}>
+                b
+            </div>
+            <div className={styles[mode].social + " magenta"}>
+                c
+            </div>
+            <div className={styles[mode].social + " purple"}>
+                c
+            </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
