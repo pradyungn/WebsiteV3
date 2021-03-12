@@ -1,16 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Lora, serif;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+  font-style: bold;
+  text-decoration: underline;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.green:hover {
+    background: #8aac8b;
+}
+
+
+.blue:hover {
+    background: #8aacab;
+}
+
+.red:hover {
+    background: #ac8a8c;
+}
+
+.purple:hover {
+    background: #8f8aac;
+}
+
+.magenta:hover {
+    background: #ac8aac;
+}
+
+.yellow:hover {
+    background: #aca98a;
+}
+
+.orange:hover {
+    background: #c6a679;
 }
