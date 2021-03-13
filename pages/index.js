@@ -1,10 +1,11 @@
-import Head from 'next/head'
 import {useState, useEffect} from "react"
 import Cookies from "js-cookie"
 
 import dark from '../styles/Dark.module.css'
 import light from '../styles/Light.module.css'
+
 import Header from '../components/Header'
+import Meta from '../components/Meta'
 
 
 let styles = {"dark":dark, "light":light};
@@ -24,10 +25,7 @@ function Home() {
 
     return (
         <>
-            <Head>
-                <title>pradyungn</title>
-            </Head>
-
+            <Meta title="pradyungn" desc="Maker of things, engineering afficionado."/> 
             <Header mode={mode} toggle={colortoggle}/>
 
             <div className={styles[mode].container}>

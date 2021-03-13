@@ -5,7 +5,7 @@
     align-items: center;
     background: #f0f0f0;
     color: #4c4c4c;
-    transition: 0.3s ease;
+    transition: 0.75s ease;
 }
 
 .landing {
@@ -119,6 +119,50 @@
     transform: translateX(-0%);
 }
 
+.moon {
+    height: 2.75rem;
+    margin-left: 3rem;
+    border-radius: 1.375rem;
+    transition: 0.75s ease;
+}
+
+.moon:hover {
+    transform: rotate(180deg);
+}
+
+.sun {
+    transition: 0.75s;
+    display: none;
+}
+
+.moon > img {
+    height: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 14rem;
+    width: 100%;
+}
+
+.hello {
+    font-size: 4.5rem;
+    color: #0f0f0f;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.aboutbody {
+    font-size: 2.25rem;
+    max-width: 45rem;
+}
+
+.abtext {
+    max-width: 45rem;
+}
+
 .grid {
     display: flex;
     align-items: center;
@@ -128,24 +172,8 @@
     margin-top: 3rem;
 }
 
-.moon {
-    height: 2.75rem;
-    margin-left: 3rem;
-    border-radius: 1.375rem;
-    transition: 0.3s ease;
-}
-
-.moon:hover {
-    transform: rotate(180deg);
-}
-
-.sun {
-    transition: 0.3s;
-    display: none;
-}
-
-.moon > img {
-    height: 100%;
+.pfp {
+    max-width: 26rem;
 }
 
 @media (max-width: 600px) { .grid {
