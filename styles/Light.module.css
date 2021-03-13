@@ -1,11 +1,11 @@
 .container {
     min-height: 100vh;
-    padding: 0 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f0f0f0;
     color: #4c4c4c;
+    transition: 0.3s ease;
 }
 
 .landing {
@@ -28,6 +28,97 @@
     margin: 0;
 }
 
+.socials {
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+.social {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-weight: normal;
+    text-decoration: none;
+    background: #cacaca;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.social:hover {
+    transform: translate(-0.33rem, -0.33rem);
+    box-shadow: 0.33rem 0.33rem #cacaca;
+}
+
+.header {
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    padding-top: 2.75rem;
+    background: #f0f0f0;
+}
+
+.headmain {
+    justify-content: flex-end;
+}
+
+.headnorm {
+    justify-content: space-between;
+}
+
+
+.headright {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+.headerlink {
+    font-size: 2.25rem;
+    margin-left: 3rem;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.underscore {
+    height: 0.25rem;
+    background: #4c4c4c;
+    width: 100%;
+}
+
+.overscore {
+    height: 0.25rem;
+    background: #4c4c4c;
+    width: 100%;
+    transform: translateX(101%);
+    transition: 0.2s ease;
+}
+
+.overspace {
+    height: 0.25rem;
+    width: 100%;
+}
+
+.headerlink > a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #262626;
+}
+
+.headerlink:hover .overscore {
+    transform: translateX(-0%);
+}
+
 .grid {
     display: flex;
     align-items: center;
@@ -37,8 +128,27 @@
     margin-top: 3rem;
 }
 
-@media (max-width: 600px) {
-    .grid {
+.moon {
+    height: 2.75rem;
+    margin-left: 3rem;
+    border-radius: 1.375rem;
+    transition: 0.3s ease;
+}
+
+.moon:hover {
+    transform: rotate(180deg);
+}
+
+.sun {
+    transition: 0.3s;
+    display: none;
+}
+
+.moon > img {
+    height: 100%;
+}
+
+@media (max-width: 600px) { .grid {
         width: 100%;
         flex-direction: column;
     }

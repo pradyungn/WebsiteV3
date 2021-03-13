@@ -9,7 +9,7 @@ body {
 
 a {
   color: inherit;
-  font-style: bold;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -34,7 +34,7 @@ a {
     background: #8f8aac;
 }
 
-.magenta:hover {
+.pink:hover {
     background: #ac8aac;
 }
 
